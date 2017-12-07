@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+_dev/
+*.xls
+*.xlsx
+*.log
