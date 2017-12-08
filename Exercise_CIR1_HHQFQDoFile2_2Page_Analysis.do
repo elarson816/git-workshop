@@ -338,18 +338,18 @@ replace month="" if year==2020
 replace year=. if year==2020
 
 * Replace month names with numbers and destring
-replace month="4" if month=="Apr"
-replace month="8" if month=="Aug"
-replace month="12" if month=="Dec"
-replace month="2" if month=="Feb"
-replace month="1" if month=="Jan"
-replace month="7" if month=="Jul"
-replace month="6" if month=="Jun"
-replace month="3" if month=="Mar"
-replace month="5" if month=="May"
-replace month="11" if month=="Nov"
-replace month="10" if month=="Oct"
-replace month="9" if month=="Sep"
+replace month="3" if month=="Apr"
+replace month="7" if month=="Aug"
+replace month="11" if month=="Dec"
+replace month="1" if month=="Feb"
+replace month="0" if month=="Jan"
+replace month="6" if month=="Jul"
+replace month="5" if month=="Jun"
+replace month="2" if month=="Mar"
+replace month="4" if month=="May"
+replace month="10" if month=="Nov"
+replace month="9" if month=="Oct"
+replace month="8" if month=="Sep"
 destring month year, replace
 *tab1 month year, mis
 
@@ -375,18 +375,18 @@ replace year=. if year==2020
 
 * Replace month names with numbers and destring
 replace month="Apr" if month=="Avr"
-replace month="4" if month=="Apr"
-replace month="8" if month=="Aug"
-replace month="12" if month=="Dec"
-replace month="2" if month=="Feb"
-replace month="1" if month=="Jan"
-replace month="7" if month=="Jul"
-replace month="6" if month=="Jun"
-replace month="3" if month=="Mar"
-replace month="5" if month=="May"
-replace month="11" if month=="Nov"
-replace month="10" if month=="Oct"
-replace month="9" if month=="Sep"
+replace month="3" if month=="Apr"
+replace month="7" if month=="Aug"
+replace month="11" if month=="Dec"
+replace month="1" if month=="Feb"
+replace month="0" if month=="Jan"
+replace month="6" if month=="Jul"
+replace month="5" if month=="Jun"
+replace month="2" if month=="Mar"
+replace month="4" if month=="May"
+replace month="10" if month=="Nov"
+replace month="9" if month=="Oct"
+replace month="8" if month=="Sep"
 destring month year, replace
 *tab1 month year, mis
 
