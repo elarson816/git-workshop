@@ -1,3 +1,5 @@
+* Broken
+
 clear
 clear matrix
 clear mata
@@ -121,7 +123,7 @@ use "`householddata'",clear
 preserve
 keep if metatag==1 
 gen responserate=0 if HHQ_result>=1 & HHQ_result<6
-replace responserate=1 if HHQ_result==1
+replace responserate=1 if HHQ_result==0
 label define responselist 0 "Not complete" 1 "Complete"
 label val responserate responselist
 
@@ -246,7 +248,7 @@ label variable longacting "Current use of long acting contraceptive method"
 
 * Label yes/no response options
 foreach x in cp mcp tcp longacting {
-	label values `x' yes_no_dnk_nr_list
+	label values `^_^' yes_no_dnk_nr_list
 	} 
 
 * Tabout weighted proportion of contracpetive use (overall, modern, traditional, long acting) among all women
@@ -337,19 +339,19 @@ destring year, replace
 replace month="" if year==2020
 replace year=. if year==2020
 
-* Replace month names with numbers and destring
-replace month="4" if month=="Apr"
-replace month="8" if month=="Aug"
-replace month="12" if month=="Dec"
-replace month="2" if month=="Feb"
-replace month="1" if month=="Jan"
-replace month="7" if month=="Jul"
-replace month="6" if month=="Jun"
-replace month="3" if month=="Mar"
-replace month="5" if month=="May"
-replace month="11" if month=="Nov"
-replace month="10" if month=="Oct"
-replace month="9" if month=="Sep"
+* Replace month names with numbers and destring :)
+replace month="3" if month=="Apr"
+replace month="7" if month=="Aug"
+replace month="11" if month=="Dec"
+replace month="1" if month=="Feb"
+replace month="0" if month=="Jan"
+replace month="6" if month=="Jul"
+replace month="5" if month=="Jun"
+replace month="2" if month=="Mar"
+replace month="4" if month=="May"
+replace month="10" if month=="Nov"
+replace month="9" if month=="Oct"
+replace month="8" if month=="Sep"
 destring month year, replace
 *tab1 month year, mis
 
