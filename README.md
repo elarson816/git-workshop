@@ -2,7 +2,7 @@
 ## Directory structure
 ```
 .
-├── Exercise_CIR1_HHQFQDoFile2_2Page_Analysis.do   <-- We'll work here
+├── Exercise_CIR1_HHQFQDoFile2_2Page_Analysis.do
 ├── .gitignore   <-- Tell git what to ignore
 ├── LICENSE   <-- How can others use your repo?
 ├── README.md
@@ -47,16 +47,15 @@ whenever development starts for a new country survey round.
   5. Push
   6. Pull request
   7. Getting feedback
-  8. Making more changes
-  9. Merge pull request (done by the maintainer)
+  8. Making more changes (if requested by a/the maintainer)
+  9. Merge pull request (done by a/the maintainer)
 
 #### Part 2
-Getting recent changes while doing development.
-  1. Fork or make an independent repo
-  2. Make a new branch
-  3. Changes are made in trunk and new repo
-  4. Fetch changes
-  5. Merge or rebase
-  6. Handle merge conflicts
-     - This happens when the same "hunk" is affected in both branches, after 
+Updating your repo from someone else's changes.
+
+  10. Fetch changes
+  11. Merge or rebase
+  12. Handle merge conflicts
+
+Merge conflicts can happen when the same "hunk" is affected in both branches, after 
     they have diverged, and before they have re-merged.
