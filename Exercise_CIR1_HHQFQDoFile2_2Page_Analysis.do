@@ -338,18 +338,18 @@ replace month="" if year==2020
 replace year=. if year==2020
 
 * Replace month names with numbers and destring
-replace month="4" if month=="Apr"
-replace month="8" if month=="Aug"
-replace month="12" if month=="Dec"
-replace month="2" if month=="Feb"
-replace month="1" if month=="Jan"
-replace month="7" if month=="Jul"
-replace month="6" if month=="Jun"
-replace month="3" if month=="Mar"
-replace month="5" if month=="May"
-replace month="11" if month=="Nov"
-replace month="10" if month=="Oct"
-replace month="9" if month=="Sep"
+replace month="4" if month=="APR"
+replace month="8" if month=="AUG"
+replace month="12" if month=="DEC"
+replace month="2" if month=="FEB"
+replace month="1" if month=="JAN"
+replace month="7" if month=="JUL"
+replace month="6" if month=="JUN"
+replace month="3" if month=="MAR"
+replace month="5" if month=="MAY"
+replace month="11" if month=="NOV"
+replace month="10" if month=="OCT"
+replace month="9" if month=="SEP"
 destring month year, replace
 *tab1 month year, mis
 
@@ -374,19 +374,20 @@ replace month="" if year==2020
 replace year=. if year==2020
 
 * Replace month names with numbers and destring
-replace month="Apr" if month=="Avr"
-replace month="4" if month=="Apr"
-replace month="8" if month=="Aug"
-replace month="12" if month=="Dec"
-replace month="2" if month=="Feb"
-replace month="1" if month=="Jan"
-replace month="7" if month=="Jul"
-replace month="6" if month=="Jun"
-replace month="3" if month=="Mar"
-replace month="5" if month=="May"
-replace month="11" if month=="Nov"
-replace month="10" if month=="Oct"
-replace month="9" if month=="Sep"
+replace month="APR" if month=="AVR"
+replace month="APR" if month=="Avr"
+replace month="4" if month=="APR"
+replace month="8" if month=="AUG"
+replace month="12" if month=="DEC"
+replace month="2" if month=="FEB"
+replace month="1" if month=="JAN"
+replace month="7" if month=="JUL"
+replace month="6" if month=="JUN"
+replace month="3" if month=="MAR"
+replace month="5" if month=="MAY"
+replace month="11" if month=="NOV"
+replace month="10" if month=="OCT"
+replace month="9" if month=="SEP"
 destring month year, replace
 *tab1 month year, mis
 
