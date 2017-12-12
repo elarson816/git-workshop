@@ -101,10 +101,12 @@ cd "$datadir"
 //local householddata: dir . files "*.dta"
 //local householddata: dir . files "CIR1_WealthWeightAll_6Dec2017.dta"
 local householddata "/Users/joeflack4/projects/git-workshop/data/CI/R1/CIR1_WealthWeightAll_6Dec2017.dta"
+local householddata "/Users/ealarson/Documents/Other/git-workshop/data/CI/R1/CIR1_WealthWeightAll_6Dec2017.dta"
 
 * Set macro for directory/file of program to calculate medians 
 //local medianfile "C:\Users\Shulin\Dropbox (Gates Institute)/DataRoutines/PMA_SOI_2P/DoFiles/Current/PMA2020_MedianDefineFn_simple_9Mar2015.do"
 local medianfile "/Users/joeflack4/projects/git-workshop/templates/PMA_SOI_2P/DoFiles/PMA2020_MedianDefineFn_simple.do"
+local medianfile "/Users/ealarson/Documents/Other/git-workshop/templates/PMA_SOI_2P/DoFiles/PMA2020_MedianDefineFn_simple.do"
 
 * Set local/global macros for current date
 local today=c(current_date)
@@ -249,6 +251,7 @@ label variable longacting "Current use of long acting contraceptive method"
 * Label yes/no response options
 foreach x in cp mcp tcp longacting {
 	label values `^_^' yes_no_dnk_nr_list
+	label values `x' yes_no_dnk_nr_list
 	} 
 
 * Tabout weighted proportion of contracpetive use (overall, modern, traditional, long acting) among all women
