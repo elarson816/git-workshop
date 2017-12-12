@@ -126,6 +126,7 @@ preserve
 keep if metatag==1 
 gen responserate=0 if HHQ_result>=1 & HHQ_result<6
 replace responserate=1 if HHQ_result==0
+replace responserate=1 if HHQ_result==1
 label define responselist 0 "Not complete" 1 "Complete"
 label val responserate responselist
 
@@ -251,7 +252,6 @@ label variable longacting "Current use of long acting contraceptive method"
 * Label yes/no response options
 foreach x in cp mcp tcp longacting {
 	label values `^_^' yes_no_dnk_nr_list
-	label values `x' yes_no_dnk_nr_list
 	} 
 
 * Tabout weighted proportion of contracpetive use (overall, modern, traditional, long acting) among all women
